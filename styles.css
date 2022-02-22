@@ -3,7 +3,7 @@
 
 :root {
     --primary-color : #fde047;
-    --tinted-yellow : #facc15;
+    --tinted-yellow : #fbbf24;
     --blue-color : #0891b2;
 }
 
@@ -15,6 +15,7 @@ body {
 
 h1 {
     text-align: center;
+    text-shadow: 3px 3px var(--tinted-yellow);
     background-color: var(--primary-color);
     padding: 3rem 0rem 2rem 0rem;
     margin: 0;
@@ -64,7 +65,7 @@ h1 {
 #output{
     border: 1px solid black;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem 0rem 2rem 0rem;
     height: 15vh;
     width: 70%;
     max-width: 550px;
