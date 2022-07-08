@@ -43,12 +43,22 @@ h1 {
     margin-right: auto;
 }
 
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #btn-translate {
     display: block;
     font-size: larger;
-    margin-inline-start: 28%;
     background-color: var(--primary-color);
     border-radius: 0.5rem;
+    border: 1px solid black;
+}
+
+#btn-translate:hover {
+    background-color: var(--tinted-yellow);
 }
 
 .container-center {
@@ -77,4 +87,10 @@ h1 {
     background-color: var(--primary-color);
     padding: 2rem 0rem 1rem 0rem;
     margin: 0;
+}
+
+@media (max-width: 500px) {
+    * {
+        font-size: small;
+    }
 }
