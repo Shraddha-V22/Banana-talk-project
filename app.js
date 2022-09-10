@@ -13,12 +13,15 @@ function errorHandler(error) {
 };
 
 function clickHandler() {
-    var inputText = textInput.value
-
+    var inputText = textInput.value;
+    
     fetch(constructURl(inputText))
     .then(response => response.json())
     .then(json => {
-        var translatedValue = json.contents.translated
+        var translatedValue = json.contents.translated;
+        if(!translatedValue) {
+            alert("There is no text to translate");
+        }
         outputDiv.innerText = translatedValue})
     .catch(errorHandler);
 };
