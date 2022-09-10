@@ -55,6 +55,7 @@ h1 {
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 #btn-translate:hover {
